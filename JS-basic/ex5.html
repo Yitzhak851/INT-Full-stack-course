@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        //Global var
+        let x = 1;
+        function globalVar() {
+            document.getElementById('f').innerHTML = x;
+        }
+
+        function localVar() {
+            //Local var
+            let y = 1;
+            y = 2;
+            y = 3;
+            y = 4;
+            document.getElementById('c').innerHTML = y;
+        }
+    </script>
+    <title>YBO web</title>
+
+</head>
+
+<body>
+    <h1>Global variables</h1>
+    <button onclick="globalVar()" id="f"> Click me </button>
+
+    <h1>Local variables</h1>
+    <button onclick="localVar()" id="c" >Click me</button>
+
+</body>
+
+</html>
