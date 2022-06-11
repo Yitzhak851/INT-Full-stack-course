@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <script>
+
+        function btn1() {
+            x = 1;
+            y = 1;
+            z = x + y;
+            document.getElementById('f').innerHTML = z;
+        }
+
+        function btn2() {
+            z=2;
+            y=1;
+            d=y+z;
+            document.getElementById('c').innerHTML = d;
+        }
+
+        function btn3() {
+            z=2;
+            y=3;
+            d=y+z;
+            document.getElementById('a').innerHTML = d;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1> Fibonacci series - 2 prime numbers : </h1>
+    <p> a= 1 , b=1 ; c = a + b <br><br> 1 + 1 <button onclick="btn1()"> = </button> <button id="f"> ? </button> </p>
+
+    <h1> The next number in the Fibonacci series </h1>
+    <p> The next num is ( 1 + 2 ): <button onclick="btn2()"> = </button> <button id="c"> ? </button> </p>
+
+    <h1> The next number in the Fibonacci series </h1>
+    <p> The next num is ( 2 + 3 ): <button onclick="btn3()"> = </button> <button id="a"> ? </button> </p>
+
+
+</body>
+
+</html>
