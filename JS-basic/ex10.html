@@ -1,27 +1,29 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <title>Document</title>
     <script>
         function btn1() {
-            x = 5
-            y = 6
-            z = 2
-            document.getElementById('f').innerHTML = x * y + z;
+            let x = 5;
+            let y = 6;
+            let z = 2;
+            document.getElementById('f').innerHTML = (x + y) * z;
         }
+        
         function btn2() {
-            x = 5
-            y = 6
-            z = 2
+            let x = 5;
+            let y = 6;
+            let z = 2;
             document.getElementById('c').innerHTML = x * (y + z);
         }
     </script>
 </head>
+
 <body>
     <h1>Multiply (kefel) before addition (hibur) / subtraction (hisur)</h1>
     <p> 5 X 6 + 2 <button onclick="btn1()"> = </button> <button id="f"> ? </button> </p>
     <h1>Brackets (sograim) precede multiplication (kefel) </h1>
     <p> 5 X (6 + 2) <button onclick="btn2()"> = </button> <button id="c"> ? </button> </p>
 </body>
-
 </html>
