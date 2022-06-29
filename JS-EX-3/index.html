@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web</title>
+    <script>
+        function init() {
+
+        }
+
+        function product (num, times) {
+            // TODO what if times is zero
+            // TODO what if times is negative
+            var n = num;
+            for (var i = 1; i < times; i++)
+                // increments itself
+                num += n; 
+            return num;
+        }
+        
+        alert(product(2,5));
+    </script>
+
+</head>
+
+<body onload="init()">
+
+</body>
+
+</html>

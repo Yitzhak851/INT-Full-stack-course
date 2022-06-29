@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function init() {
+
+        }
+
+        function maxDigit(n) {
+
+            // if (n < 0) or (n > 999) we are in trouble
+
+            if ((n / 100) > ((n % 100) / 10))
+                return (n / 100);
+            return ((n % 100) / 10);
+
+            if ((n % 10) > ((n % 100) / 10))
+                return (n % 10);
+            return ((n % 100) / 10);
+        }
+
+        alert(maxDigit(239));
+
+    </script>
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function init() {
+            }
+
+            function strA(n) {
+                if ( n == 0 )
+                    return " ";
+                return "a" + strA(n-1);
+                }   
+
+            alert(strA(4));
+
+        </script>
+    </head>
+    <body onload="init()">
+
+    </body>
+</html>
+
