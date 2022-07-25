@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>YBO page</title>
-    </head>
-<body onload="init()">
-    <script src="/17. Lesson17(24-7-22)/script.js"></script>
-</body>
+<head>
+    <script>
+        let txt;
+        let p1;
+
+        function init() {
+            txt = document.getElementById("txt");
+            p1 = document.getElementById("p1");
+        }
+
+        function btnClicked() {
+            let typedText = txt.value;
+
+            if (typedText.length > 0){
+                let n = parseInt(typedText);
+                for(let i=0; i < n; i++){
+                    p1.innerHTML += "a";
+                }
+            }
+            
+        }
+
+    </script>
+    <title>YBO page</title>
+</head>
+    <body onload="init()">
+        <input type="number" id="txt" />
+        <button onclick="btnClicked()">click me!</button>
+        <p id="p1"></p>
+    </body>
 </html>
